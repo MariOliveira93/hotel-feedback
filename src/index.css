@@ -1,0 +1,126 @@
+body {
+  background-color: #005bc5;
+  color: black;
+  font-family: sans-serif;
+  display: flex;
+  justify-content: center; /* Centraliza o conteúdo horizontalmente */
+  align-items: center; /* Centraliza o conteúdo verticalmente */
+  min-height: 100vh;
+  margin: 0;
+}
+
+h1,
+h2,
+p {
+  text-align: center; /* Centraliza todos os cabeçalhos e parágrafos */
+  margin-bottom: 1rem; /* Adiciona um pouco de espaço abaixo dos títulos */
+}
+
+.container {
+  background-color: #fff;
+  padding: 2rem;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 90%;
+  max-width: 800px;
+  /* Não precisamos de display flex/grid aqui, pois o body já centraliza o container */
+}
+
+fieldset {
+  border: 1px solid #ddd;
+  padding: 1rem;
+  margin-bottom: 1.5rem;
+  border-radius: 4px;
+}
+
+legend {
+  font-weight: bold;
+  padding: 0 0.5rem;
+  margin-bottom: 1rem; /* Adiciona espaço abaixo da legenda */
+}
+
+label {
+  display: block; /* Garante que o label ocupe toda a largura */
+  margin-top: 1rem; /* Espaço acima do label */
+  margin-bottom: 0.5rem; /* Espaço abaixo do label */
+  font-weight: bold; /* Deixa o texto do label mais visível */
+}
+
+input[type="text"],
+input[type="email"],
+input[type="number"],
+select,
+textarea {
+  display: block; /* Garante que os campos de input/select/textarea ocupem toda a largura */
+  width: 100%;
+  box-sizing: border-box; /* Inclui padding e border na largura total */
+  padding: 0.75rem; /* Aumenta o padding para melhor UX */
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  margin-bottom: 1rem; /* Espaço abaixo dos campos */
+}
+
+/* Removido o grid para o primeiro fieldset para que os campos fiquem em uma única coluna */
+/* fieldset:first-of-type {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+} */
+
+/* Estilos específicos para os radios buttons para que fiquem alinhados */
+fieldset input[type="radio"] {
+  display: inline-block; /* Faz com que os radios buttons fiquem na mesma linha */
+  width: auto; /* Permite que o width se ajuste ao conteúdo */
+  margin-right: 0.5rem; /* Espaço entre o radio e o label */
+}
+
+fieldset label[for="yes-option"],
+fieldset label[for="no-option"] {
+  display: inline-block; /* Para alinhar os labels dos radios */
+  margin-right: 1.5rem; /* Espaço entre as opções "Sim" e "Não" */
+  font-weight: normal; /* Labels de radio não precisam ser bold */
+  width: auto; /* Reseta a largura para o padrão inline-block */
+}
+
+
+.checkbox-item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 8px;
+  margin-top: 0.5rem; /* Ajusta o espaçamento superior */
+}
+
+.checkbox-item label {
+  display: flex;
+  align-items: center;
+  gap: 8px; /* espaço entre a caixinha e o texto */
+  cursor: pointer;
+  font-weight: normal; /* Labels de checkbox não precisam ser bold */
+  margin-top: 0; /* Remove margem superior extra */
+}
+
+input[type="checkbox"] {
+  width: auto; /* Permite que o checkbox tenha seu tamanho natural */
+  margin: 0; /* Remove margens padrão */
+}
+
+
+button {
+  background-color: #00b4fc;
+  color: black;
+  padding: 0.75rem 1.5rem;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: background-color 0.3s ease;
+  display: block; /* Garante que o botão ocupe sua própria linha */
+  margin-top: 2rem; /* Espaço acima do botão */
+  width: auto; /* Permite que o botão se ajuste ao conteúdo */
+  margin-left: auto; /* Centraliza o botão */
+  margin-right: auto; /* Centraliza o botão */
+}
+
+button:hover {
+  background-color: #17f9ff;
+}
