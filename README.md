@@ -1,12 +1,67 @@
-# React + Vite
+Pousada Pavão: Formulário de Satisfação
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Este é um projeto simples de React para criar um Formulário de Pesquisa de Satisfação para a Pousada Pavão. O formulário foi desenvolvido para coletar feedback de hóspedes sobre sua experiência de hospedagem, incluindo informações pessoais, motivos da escolha da pousada e avaliações de serviços.
 
-Currently, two official plugins are available:
+🚀 Tecnologias Utilizadas
+React: Biblioteca JavaScript para construir interfaces de usuário.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+HTML: Estrutura do formulário e dos elementos da página.
 
-## Expanding the ESLint configuration
+CSS: Estilização do formulário para uma aparência limpa e profissional.
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+✨ Funcionalidades
+Campos de Informações Pessoais: Coleta de nome, e-mail e idade.
+
+Botões de Rádio: Seleção para saber se foi a primeira hospedagem.
+
+Caixas de Seleção (Checkboxes): Permite selecionar múltiplos motivos para a escolha da pousada.
+
+Menus Suspensos (select): Avaliações de serviço e café da manhã.
+
+Caixa de Texto (textarea): Espaço para comentários adicionais.
+
+Gerenciamento de Estado: O estado do formulário é gerenciado com o hook useState do React, garantindo que os dados inseridos sejam capturados e atualizados dinamicamente.
+
+Submissão do Formulário: Ao clicar em "Enviar", os dados são capturados e exibidos no console do navegador, simulando o envio de informações.
+
+⚙️ Como Executar o Projeto
+Siga estas instruções para rodar o projeto em sua máquina local.
+
+Clone o repositório:
+
+Bash
+
+git clone https://github.com/SEU-USUARIO/nome-do-seu-repositorio.git
+Navegue até o diretório do projeto:
+
+Bash
+
+cd nome-do-seu-repositorio
+Instale as dependências:
+
+Bash
+
+npm install
+# ou
+yarn install
+Inicie o servidor de desenvolvimento:
+
+Bash
+
+npm run dev
+# ou
+yarn dev
+O projeto estará disponível em http://localhost:5173 (ou a porta que for indicada no terminal).
+
+📝 Contribuição
+Contribuições são bem-vindas! Se você tiver alguma ideia para melhorar este formulário ou encontrar algum bug, por favor, abra uma issue ou um pull request.
+
+📄 Licença
+Este projeto está licenciado sob a Licença MIT.
+
+
+
+
+
+
+
